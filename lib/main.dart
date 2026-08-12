@@ -46,23 +46,26 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
 
-        body: Column(
-          children: [
+        body: Center(
+          child: SizedBox(
+            width: 300,
+            child: TextField(
+              controller: controller,//aca creo el objeto controller para poder obtener el valor del textfield
 
-            TextField(
-              controller: controller,
 
+              //funcion igual a la de react que me permite obtener el valor del textfield en tiempo real y comprobar que funciona correctamente
+               onChanged: (value) {
+                print(value);
+              },
               decoration: InputDecoration(
                 hintText: 'Escribe un Pokémon',
                 prefixIcon: const Icon(Icons.search),
-
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
             ),
-
-          ],
+          ),
         ),
       ),
     );
