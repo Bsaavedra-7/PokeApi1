@@ -120,6 +120,12 @@ class _MyAppState extends State<MyApp> {
                   Image.network(
                     pokemon!["sprites"]["front_default"],
                   ),
+
+                  Text(
+                    "Tipos: ${pokemon!["types"].map((t) => t["type"]["name"]).join(", ")}",
+                  ),
+
+                 Text("N°${pokemon!["id"]}"),
                 ],
               ),
           ],
