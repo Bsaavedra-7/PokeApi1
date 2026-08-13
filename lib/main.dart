@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 import 'services/pokemon_api.dart';
 
 void main() {
@@ -20,6 +21,9 @@ class _MyAppState extends State<MyApp> {
 
   //aca creo otro estado que guardara los datos del pokemon en un array de tipo map
   Map<String, dynamic>? pokemon;
+
+  Timer? debounce;
+
 
   @override
   Widget build(BuildContext context) {
@@ -61,13 +65,25 @@ class _MyAppState extends State<MyApp> {
                   controller: controller,
 
                   onChanged: (value) async {
-                    if (value.isNotEmpty) {
-                      final data = await obtenerPokemon(value);
-
-                      setState(() {
-                        pokemon = data;
-                      });
+                    if(value.isEmpty){
+                      return;
                     }
+
+                    //debounce es una funcion que genera un tiempo de espera para que no hayan muchas peticiones  a al api
+                    debounce?.cancel();
+                    debounce = Timer(const Duration(milliseconds: 500), () async {
+                      try {
+                        final data = await obtenerPokemon(value.toLowerCase());
+                        setState(() {
+                          pokemon = data;
+                        });
+                      } catch (e) {
+                        setState(() {
+                          pokemon = null;
+                        });
+                      }
+                    });
+
                   },
 
                   decoration: InputDecoration(
