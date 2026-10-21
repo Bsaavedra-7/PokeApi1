@@ -1,17 +1,35 @@
-# pokeapp1
+# 2026-G05-ProyectoPokeApi
 
-A new Flutter project.
+Aplicación web/móvil desarrollada en Flutter/Dart usando una api de Pokémon (https://pokeapi.co/)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Integrantes
+  - Bastián Gonzalo Cabezas Oliva
+  - Martin Ignacio Garcia Barro
+  - Lucas Benjamín Fierro Orellana
+  - Benjamín Ignacio Saavedra Uribe
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Tecnologías
+- **Lenguaje:** Dart
+- **Framework:** Flutter
+- **Api Externa:** [PokeApi](https://pokeapi.co/)
+- **Gestión de Proyecto:** GitHub Proyects (Scrum)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Requisitos e Instalación
+
+### Prerrequisitos
+- *Tener instalado [Flutter SDK].*
+- *Un emulador configurado o navegador Web.*
+
+### Pasos para Ejecutar
+1. Clonar el Repositorio:
+  `git clone https://github.com/ProyectoDeProgramacionUDEC/2026-G05-ProyectoPokeApi.git`
+2. Entrar en el Directorio
+   `cd 2026-G05-ProyectoPokeApi`
+3. Obtener Dependencias de Flutter
+   `flutter pub get`
+4. Ejecutar app
+  `flutter run lib/pag_pokedex.dart` o ejecutar directamente desde el editor de código.
+

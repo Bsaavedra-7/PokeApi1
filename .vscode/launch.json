@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Higher or Lower Game",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/higher_or_lower_game.dart"
+        },
+        {
+            "name": "Pokedex (main)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/pag_pokedex.dart"
+        }
+    ]
+}

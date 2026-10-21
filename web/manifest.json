@@ -1,6 +1,6 @@
 {
-    "name": "pokeapp1",
-    "short_name": "pokeapp1",
+    "name": "proyecto_poke_api",
+    "short_name": "proyecto_poke_api",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
