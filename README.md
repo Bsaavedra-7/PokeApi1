@@ -1,13 +1,6 @@
-# 2026-G05-ProyectoPokeApi
+# ProyectoPokeApi
 
 Aplicación web/móvil desarrollada en Flutter/Dart usando una api de Pokémon (https://pokeapi.co/)
-
-
-## Integrantes
-  - Bastián Gonzalo Cabezas Oliva
-  - Martin Ignacio Garcia Barro
-  - Lucas Benjamín Fierro Orellana
-  - Benjamín Ignacio Saavedra Uribe
 
 
 ## Tecnologías
@@ -25,9 +18,9 @@ Aplicación web/móvil desarrollada en Flutter/Dart usando una api de Pokémon (
 
 ### Pasos para Ejecutar
 1. Clonar el Repositorio:
-  `git clone https://github.com/ProyectoDeProgramacionUDEC/2026-G05-ProyectoPokeApi.git`
+  `git clone https://github.com/Bsaavedra-7/PokeApi1.git`
 2. Entrar en el Directorio
-   `cd 2026-G05-ProyectoPokeApi`
+   `cd PokeApi1`
 3. Obtener Dependencias de Flutter
    `flutter pub get`
 4. Ejecutar app
